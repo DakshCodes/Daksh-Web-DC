@@ -1,0 +1,32 @@
+.head{
+  // border: 1px solid;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  
+  .menu-btn{
+    // margin-right: -15%;
+    // margin-top: 15px;
+    a{
+      color: #ccc;
+      opacity: 0.5;
+      font-size: 29px;
+      letter-spacing: 10px;
+      transition: all 0.9s;
+      &:hover{
+        opacity: 1;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .logo  {
+    margin-left: 23%;
+    img{
+      width: 90px;
+      color: #606887;
+    }
+    z-index: 16;
+ }
+  }

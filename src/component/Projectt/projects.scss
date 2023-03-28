@@ -1,0 +1,201 @@
+@import '/src/style/statics.scss';
+/************ Projects Css ************/
+.project {
+    height: 100%;
+    width: 100vw;
+    background-color: #292b46;
+    background-image: url('https://cdn.pixabay.com/photo/2018/04/14/23/20/triangles-3320452_960_720.png');
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    /* border: 1px solid red; */
+  }
+  .project h1 {
+    /* padding: 20px; */
+        color: #ccc;
+        font: 700 3.5rem 'DM Serif Display', serif;
+        /* text-transform: uppercase; */
+        width: fit-content;
+        border-bottom: 1px solid #ccc;
+         padding: 0.5rem ;
+        margin: auto;
+
+  }
+  .first-project-section{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project p {
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    /* line-height: 1.5em; */
+    margin: 14px auto 30px auto;
+    text-align: center;
+    width: 50%;
+    color: #ccc;
+    border-radius: 10px 35px 10px 35px;
+    /* background-color: #ccc; */
+    text-transform: uppercase;
+  }
+  .project .nav.nav-pills {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 50px;
+    /* background-color: rgb(255 255 255 / 10%); */
+    background-color: #ccc;
+    color: #292b46;
+    overflow: hidden;
+  }
+  .project .nav.nav-pills .nav-item {
+    width: 33.33333%;
+  }
+  .project .nav.nav-pills .nav-link {
+    background-color:#292b46;
+    border-radius: 0;
+    padding: 17px 0;
+    color: #292b46;
+    width: 100%;
+    font-size: 17px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    z-index: 0;
+  }
+  .project .nav.nav-pills .nav-link::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 100%;
+      /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
+      background-color: #ccc;
+      top: 0;
+      color: #292b46;
+      left: 0;
+      z-index: -1;
+      transition: 0.3s ease-in-out;
+  }
+  .project .nav.nav-pills .nav-link.active::before {
+      width: 100% !important;
+  }
+  .project .nav.nav-pills .nav-link.active {
+      border: 1px solid rgba(255, 255, 255, 1);
+      color: #292b46;
+  }
+  .nav-link#projects-tabs-tab-first {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 55px 0px 0px 55px;
+    color: #ccc;
+  }
+  .nav-link#projects-tabs-tab-second {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: #ccc;
+  }
+  .nav-link#projects-tabs-tab-third {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0 55px 55px 0;
+    color: #ccc;
+  }
+  .proj-imgbx {
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    height: 30rem;
+    width: 50rem;
+  }
+  .proj-imgbx img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .proj-imgbx::before {
+    content: "";
+    /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
+    background-color: #292b46;
+    opacity: 0.85;
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    transition: 0.4s ease-in-out;
+  }
+  .proj-imgbx:hover::before {
+    height: 100%;
+    
+  }
+  .proj-txtx {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    text-align: center;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    width: 100%;
+    color: $color1;
+    .buttons-project{
+      //  border: 1px solid red;
+      //  padding: 10px;
+       display: flex;
+       margin-top: 18px;
+       justify-content: space-evenly;
+      //  background-color: $color1;
+      button{
+        font-size: 18px;
+        border-radius: 18%;
+        padding: 8px 10px;
+        color: $color2;
+        font-weight: 900;
+        background-color: $color5;
+        transition: all 300ms ease-in;
+        &:hover{
+          color: $color1;
+          background-color:$color2;
+        }
+      }
+    }
+  }
+  .proj-imgbx:hover .proj-txtx {
+    top: 50%;
+    opacity: 1;
+    color: #fff;
+  }
+  .proj-txtx h4 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1.1em;
+  }
+  .proj-txtx span {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    color: #fff;
+  }
+  .background-image-right {
+    top: 20%;
+    position: absolute;
+    bottom: 0;
+    width: 35%;
+    right: 0;
+    z-index: -4;
+  }
+  
+  #slideInUp{
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+  }
+  .main-project{
+    height: 100%;
+    /* border: 1px solid; */
+  }
+  
