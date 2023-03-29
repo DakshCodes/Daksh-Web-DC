@@ -7,6 +7,7 @@ import '../src/component/Header/header.scss'
 import '../src/component/Skills/skill.scss'
 // import '../src/component/QuotesSection/qoute.scss'
 import '../src/component/Overlay/Overlay.scss'
+import '../src/style/media.scss';
 import '../src/component/Contact/Contact.css'
 import { Toaster } from "react-hot-toast";
 import { Routes, Route } from 'react-router-dom'
